@@ -24,16 +24,6 @@ public class DB{
     return connection;
   }
 
-  public static void closeConnection(){
-    if(connection!=null){
-      try{
-        connection.close();
-      }catch(SQLException e){
-        throw new DbException(e.getMessage());
-      }
-    }
-  }
-
   private static Properties loadProperties(){
     try(var fs = new FileInputStream("db.properties")){
       var props = new Properties();
@@ -41,6 +31,16 @@ public class DB{
       return props;
     }catch(IOException e){
       throw new DbException(e.getMessage());
+    }
+  }
+
+  public static void closeConnection(){
+    if(connection!=null){
+      try{
+        connection.close();
+      }catch(SQLException e){
+        throw new DbException(e.getMessage());
+      }
     }
   }
 
