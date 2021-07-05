@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class JDBC4UpdateAnValue{
+public class JDBC4UpdateValue{
   public static void main(String[] args){
     Connection connection = null;
     PreparedStatement ps = null;

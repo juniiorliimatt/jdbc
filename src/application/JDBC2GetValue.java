@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class JDBC2GetInformation{
+public class JDBC2GetValue{
   public static void main(String[] args){
 
     //Cria uma conexão com o banco de dados(configurado em outro arquivo)
