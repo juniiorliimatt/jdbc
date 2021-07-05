@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class JDBC5DeleteAnValue{
+public class JDBC5DeleteValue{
   public static void main(String[] args){
     Connection connection;
     PreparedStatement ps = null;
